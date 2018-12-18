@@ -1,0 +1,55 @@
+/*!
+
+ =========================================================
+ * Paper Kit 2 Angular - v1.1.0
+ =========================================================
+
+ * Product Page: https://www.creative-tim.com/product/ADAINDIA-2-angular
+ * Copyright 2017 Creative Tim (https://www.creative-tim.com)
+ * Licensed under MIT (https://github.com/timcreative/ADAINDIA/blob/master/LICENSE.md)
+
+ =========================================================
+
+ * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+ */
+
+@import "ADAINDIA/variables";
+@import "ADAINDIA/mixins";
+
+@import "ADAINDIA/typography";
+
+// Core CSS
+@import "ADAINDIA/misc";
+@import "ADAINDIA/buttons";
+@import "ADAINDIA/inputs";
+@import "ADAINDIA/progress-bars";
+@import "ADAINDIA/sliders";
+@import "ADAINDIA/alerts";
+@import "ADAINDIA/labels";
+@import "ADAINDIA/tooltips-and-popovers";
+@import "ADAINDIA/sections";
+@import "ADAINDIA/checkbox-radio";
+@import "ADAINDIA/navbars";
+@import "ADAINDIA/images";
+@import "ADAINDIA/cards";
+@import "ADAINDIA/footers";
+
+
+// Bootstrap Switch
+@import "ADAINDIA/bootstrap-switch";
+
+// Fancy Stuff
+@import "ADAINDIA/dropdown";
+//
+// icons
+@import "ADAINDIA/icons";
+//
+@import "ADAINDIA/tabs-navs-pagination";
+@import "ADAINDIA/collapse";
+@import "ADAINDIA/carousel";
+@import "ADAINDIA/modal";
+//
+@import "ADAINDIA/responsive";
+@import "ADAINDIA/plugins/datetimepicker";
+@import "ADAINDIA/social-buttons";
+@import "ADAINDIA/examples";

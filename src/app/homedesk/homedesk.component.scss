@@ -1,4 +1,178 @@
-.container1{
+/*start
+  
+* {
+  box-sizing: border-box;
+}
 
-display: inline-block; width:100%;
-   }
+*:after, *:before {
+  box-sizing: inherit;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  background-color: $main-color;
+  line-height: 1.5;
+}
+*/
+$main-color: #ab7ae9;
+
+.container2 {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto 5%;
+  padding: 1em 0;
+  font-size: 1.5rem;
+  text-align: center;
+  background-color: $main-color;
+
+  h2 {
+    color: white;
+    font-size: 1.6rem;
+  }
+}
+
+.example {
+  width: 200px;
+  margin: 0 auto 40px;
+}
+
+.example__title {
+  font-size: 1.3rem;
+  color: white;
+}
+
+.example__button {
+  background-color: transparent;
+  color: white;
+  padding: 0.5em;
+  margin-bottom: 0.5em;
+  text-transform: uppercase;
+  border: 3px solid darken($main-color, 10);
+  border-radius: 10px;
+  cursor: pointer;
+  transition: border-color 0.3s;
+  
+  &:hover,
+  &:focus {
+    border-color: darken($main-color, 20);
+  }
+}
+
+.example__element {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+  border-radius: 10px;
+  
+  &:nth-of-type(1) {
+    margin-top: 1.5em;
+  }
+}
+
+/* end*/
+
+$bg-color: #ECC8EC;
+$box-color1: #5F9F9F;
+$box-color2: #79CDCD;
+$text-color: rgba(0, 0, 0, 0) linear-gradient(to right, rgb(23, 42, 23), rgb(234, 209, 218)) repeat scroll 0% 0%;
+$btn-color: #754C78;
+
+$shadow-color: rgba(0, 0, 0, .5);
+* {
+  box-sizing: border-box;
+}
+
+*:before, *:after {
+  box-sizing: inherit;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden;
+  background-color: lighten($bg-color, 16);
+}
+
+.container1 {
+  position: relative;
+  margin: 0 auto;
+  width: 100%;
+  height: 100%;
+  max-width: 600px;
+  min-height : 300px;
+  text-align: center;
+}
+
+.box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 200px;
+  width: 200px;
+  border-radius: 20px;
+}
+
+.box1 {
+  background-color: rgba($box-color1, 0.75);
+}
+.box2 {
+  background-color: rgba($box-color2, 0.75);
+  left: 48%;
+  top: 52%;
+  transform: translate(-48%, -52%);
+}
+
+.text {
+  position: absolute;
+  //display: inline-block;
+  font-size: 3em;
+line-height: 5em;
+  font-family: ' Densia Sans';
+  color: $text-color;
+}
+
+.bottom-text {
+  left: 35%;
+  top: 55%;
+}
+
+.middle-text {
+  left: 35%;
+  top: 45%;
+}
+
+.top-text {
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%);
+}
+
+/* replay button */
+.controls {
+  background: $bg-color;
+  padding: 1em;
+}
+
+.controls__replay-btn {
+  border: none;
+  outline: none;
+  background-color: $btn-color;
+  color: white;
+  text-transform: uppercase;
+  text-shadow: 1px 2px 3px $shadow-color;
+  font-size: 1.5em;
+  padding: 0.5em;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: background-color 0.3s, 
+              border-radius, 0.2s;
+}
+
+.controls__replay-btn:hover,
+.controls__replay-btn:focus {
+  background-color: darken($btn-color, 20);
+}
+
